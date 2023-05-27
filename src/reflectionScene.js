@@ -1,4 +1,3 @@
-// Import the Phaser library
 const Phaser = require("phaser");
 
 // Create a ReflectionScene class that extends Phaser.Scene for the Reflection mini-game

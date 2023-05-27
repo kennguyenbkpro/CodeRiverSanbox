@@ -1,11 +1,7 @@
-// Import the Phaser library
-import LoseScene from "./loseScene";
-
-// Import the MenuScene and ReflectionScene from their respective files
-import MenuScene from "./menuScene";
-import ReflectionScene from "./reflectionScene";
-
 const Phaser = require("phaser");
+const LoseScene = require("./loseScene");
+const MenuScene = require("./menuScene");
+const ReflectionScene = require("./reflectionScene");
 
 // Create a new Phaser game configuration
 const config = {
