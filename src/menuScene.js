@@ -1,5 +1,5 @@
 // Import the Phaser library
-import Phaser from "phaser";
+const Phaser = require("phaser");
 
 // Create a MenuScene class that extends Phaser.Scene
 class MenuScene extends Phaser.Scene {
@@ -38,7 +38,7 @@ class MenuScene extends Phaser.Scene {
           backgroundColor: "#ff6f00", // Set a background color
           padding: {
             x: 20,
-            y: 10
+            y: 10,
           },
           borderRadius: 10, // Add border radius for a rounded button appearance
           stroke: "#000000", // Add stroke color
@@ -48,8 +48,8 @@ class MenuScene extends Phaser.Scene {
             offsetY: 2,
             color: "#000000",
             blur: 4,
-            fill: true
-          }
+            fill: true,
+          },
         }
       )
       .setOrigin(0.5);

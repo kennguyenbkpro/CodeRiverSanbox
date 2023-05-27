@@ -1,5 +1,5 @@
 // Import the Phaser library
-import Phaser from "phaser";
+const Phaser = require("phaser");
 
 // Create a LoseScene class that extends Phaser.Scene
 class LoseScene extends Phaser.Scene {
@@ -19,7 +19,7 @@ class LoseScene extends Phaser.Scene {
         {
           fontFamily: "Arial",
           fontSize: "48px",
-          color: "#ffffff"
+          color: "#ffffff",
         }
       )
       .setOrigin(0.5);

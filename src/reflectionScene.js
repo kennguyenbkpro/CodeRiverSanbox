@@ -1,5 +1,5 @@
 // Import the Phaser library
-import Phaser from "phaser";
+const Phaser = require("phaser");
 
 // Create a ReflectionScene class that extends Phaser.Scene for the Reflection mini-game
 class ReflectionScene extends Phaser.Scene {
@@ -33,44 +33,44 @@ class ReflectionScene extends Phaser.Scene {
       {
         question: "Question 1",
         options: ["Option A", "Option B"],
-        correctOption: 1 // Index of the correct option (1 or 2)
+        correctOption: 1, // Index of the correct option (1 or 2)
       },
       {
         question: "Question 2",
         options: ["Option X", "Option Y"],
-        correctOption: 2
+        correctOption: 2,
       },
       {
         question: "Question 3",
         options: ["Option X", "Option Y"],
-        correctOption: 2
+        correctOption: 2,
       },
       {
         question: "Question 4",
         options: ["Option X", "Option Y"],
-        correctOption: 2
+        correctOption: 2,
       },
       {
         question: "Question 5",
         options: ["Option X", "Option Y"],
-        correctOption: 2
+        correctOption: 2,
       },
       {
         question: "Question 6",
         options: ["Option X", "Option Y"],
-        correctOption: 2
+        correctOption: 2,
       },
       {
         question: "Question 7",
         options: ["Option X", "Option Y"],
-        correctOption: 2
-      }
+        correctOption: 2,
+      },
     ];
     this.timeRemaining = 60;
     this.timerText = this.add.text(16, 16, `Time: ${this.timeRemaining}`, {
       fontFamily: "Arial",
       fontSize: "24px",
-      color: "#ffffff"
+      color: "#ffffff",
     });
 
     // Show the first question
@@ -81,7 +81,7 @@ class ReflectionScene extends Phaser.Scene {
       delay: 1000,
       callback: this.updateTimer,
       callbackScope: this,
-      loop: true
+      loop: true,
     });
   }
 
@@ -108,7 +108,7 @@ class ReflectionScene extends Phaser.Scene {
           fontSize: "32px",
           color: "#ffffff",
           align: "center",
-          wordWrap: { width: 600, useAdvancedWrap: true }
+          wordWrap: { width: 600, useAdvancedWrap: true },
         }
       )
       .setOrigin(0.5);
@@ -140,7 +140,7 @@ class ReflectionScene extends Phaser.Scene {
       .text(button1.x, button1.y, answerOptions[0], {
         fontFamily: "Arial",
         fontSize: "24px",
-        color: "#ffffff"
+        color: "#ffffff",
       })
       .setOrigin(0.5);
 
@@ -148,7 +148,7 @@ class ReflectionScene extends Phaser.Scene {
       .text(button2.x, button2.y, answerOptions[1], {
         fontFamily: "Arial",
         fontSize: "24px",
-        color: "#ffffff"
+        color: "#ffffff",
       })
       .setOrigin(0.5);
 
